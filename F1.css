@@ -1,0 +1,101 @@
+h1 {	
+	font-size: 52px;
+	font-family: Verdana;
+	color: Purple;
+	text-align: center;
+}
+
+h2 {
+	color: blue;
+	font-size: 18px;
+	text-align: center;
+	padding-bottom: 11px;
+}
+
+#Lewy {
+	position: fixed;
+	top: -9%;
+	left: -13%;
+	bottom: -25%;
+	min-height: 120%;
+	min-width: 120%;
+	opacity: 0.3;
+}
+#PowerButton {
+	text-align: center;
+}
+
+#RaceButtonText {
+	cursor: pointer;
+	text-align: center;
+	font-size: 23px;
+	height: 60px;
+    width: 300px;
+    border-color: black;
+    border-width: 2px;
+    background-color: red;
+    border-style: solid;
+    border-radius: 33px;
+}
+
+p {
+	font-size: 19px;	
+	text-align: center;;
+	margin: auto;
+	padding-left: 111px;
+	padding-right: 111px;
+	padding-top: 44px;
+	padding-bottom: 100px;
+}
+
+#hamiltonButton {
+	text-align: block;
+	font-size: 20px;
+	height: 50px;
+    width: 120px;
+    border-color: #6495ed;
+    border-width: 2px;
+    background-color: #bcd2ee;
+    border-style: solid;
+    border-radius: 5px;
+}
+
+#rosbergButton {
+	text-align: block;
+	font-size: 20px;
+	height: 50px;
+    width: 120px;
+    border-color: #6495ed;
+    border-width: 2px;
+    background-color: #bcd2ee;
+    border-style: solid;
+    border-radius: 5px;
+}
+
+#vettelButton {
+	text-align: block;
+	font-size: 20px;
+	height: 50px;
+    width: 120px;
+    border-color: #6495ed;
+    border-width: 2px;
+    background-color: #bcd2ee;
+    border-style: solid;
+    border-radius: 5px;
+}
+
+#alonsoButton {
+	text-align: block;
+	font-size: 20px;
+	height: 50px;
+    width: 120px;
+    border-color: #6495ed;
+    border-width: 2px;
+    background-color: #bcd2ee;
+    border-style: solid;
+    border-radius: 5px;
+}
+
+footer {
+	font-size: 10px;
+}

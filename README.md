@@ -1,1 +1,1 @@
-Race game with four race buttons that race across the screen. 
+Race game with four F1 racers that move across the screen. Click the Power Button to make the racers move.

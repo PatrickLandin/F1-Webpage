@@ -12,25 +12,25 @@ $(document).ready(function() {
       if (this.isSkilled()) {
         this.position += this.speed;
         
-        $(this.name).css("left", this.position);
+        $(this.name).css('margin-left', this.position + "px");
         console.log(this.position);
       }
-    };
+    }
 	}
 
-  var hamilton = new Driver ("Lewis Hamilton", 8, 8);
-  var rosberg = new Driver ("Nico Rosberg", 8, 8);
-  var alonso = new Driver ("Fernando Alonso", 7, 8);
-  var vettel = new Driver ("Sebastian Vettel", 7, 8);
-  var meters = 3050;
+  var hamilton = new Driver ("#hamiltonButton", 8, 8);
+  var rosberg = new Driver ("#rosbergButton", 8, 8);
+  var alonso = new Driver ("#alonsoButton", 7, 8);
+  var vettel = new Driver ("#vettelButton", 7, 8);
+  var meters = 990;
 
-  $("#RaceButtonText").click(function() {
+  $("#RaceButtonText").on('click', function() {
     if (hamilton.position < meters && rosberg.position < meters && alonso.position < meters && vettel.position < meters) {
       hamilton.advance();
       rosberg.advance();
       alonso.advance();
       vettel.advance();
-    } else {
+    }
 
 
     var WINNER;
@@ -43,13 +43,12 @@ $(document).ready(function() {
  	  else if (alonso.position >= meters) {
  		 WINNER = "Alonso wins. Wow! That never happens.";
  	  }
- 	  else  {
+ 	  else if (vettel.position >= meters) {
  	  	WINNER = "Seb wins! Is it 2012 again???";
-  	}
+  	}  else { 
+      WINNER = "None yet!";
+    }
       
-      $("#RaceButtonText").html("<b>AND THE WINNER IS:<p>" + WINNER + "!!!</p></b>");
-      $("#announcer").html("<h1>WINNER: " + WINNER + "!!</h1>");
-
-  }
- });
+      $("#announcer").html("<h2>WINNER: " + WINNER + "!!</h2>");
+  })
 });
